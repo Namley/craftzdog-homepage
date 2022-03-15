@@ -17,9 +17,9 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import {IoLogoTwitter, IoLogoDiscord, IoLogoReddit, IoLogoGoogle} from 'react-icons/io5'
+import thumbSNK from '../public/images/links/Attack-on-Titan-season-4-part-2-confirmed-to-premiere.jpg'
+import thumbED from '../public/images/links/thumb-1920-1151249.jpg'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -36,15 +36,15 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a full-stack developer based in Japan!
+        Hello, I&apos;m a backend developer based in Germany!
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Hoai Nam Le
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Digital Nerd ( Builder / Developer / Gamer )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -78,16 +78,12 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop" scroll={false}>
-            <Link>Inkdrop</Link>
-          </NextLink>
-          .
+          Nam is a backend developer based in Hamburg with a passion for building
+          websites/services and he likes playing around with the newest technology.
+          He often dives into multiple hobbies at the same time, from building keyboards
+          to making interesting and funny discord bots. When he is not coding, Nam hangs out in
+          the digital playground that is called the online gaming world. He is currently in training
+          to become a sofware developer.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" scroll={false}>
@@ -103,22 +99,20 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>2003</BioYear>
+          Born in Hanoi, Vietnam.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2019</BioYear>
+          Completed his Mittlere Schulabschluss at Schulzentrum Nord in Pinneberg
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2019</BioYear>
+          Trained as a software developer for eos.uptrade in Hamburg
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Works as a freelance
+          <BioYear>2019 to present</BioYear>
+          On his final year of training and Fachabitur.
         </BioSection>
       </Section>
 
@@ -127,15 +121,15 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
+         {' '}
+          <Link href="https://myanimelist/profile/namley" target="_blank">
+            Anime, Manga
           </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
+          , Coding, {' '}
+          <Link href="https://steamcommunity.com/id/namley" target="_blank">
+            Games
           </Link>
-          , Leica, Machine Learning
+          , Building Keyboards, Music
         </Paragraph>
       </Section>
 
@@ -149,42 +143,42 @@ const Home = () => (
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoGithub />}
+                leftIcon={<IoLogoDiscord />}
               >
-                @craftzdog
+                Namley#1410
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://reddit.com/u/Nam_Ley" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoReddit />}
+              >
+                u/Nam_Ley
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://twitter.com/namleyy" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoTwitter />}
               >
-                @inkdrop_app (English)
+                @Namleyy
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="mailto:lehoainam0106@gmail.com" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoGoogle />}
               >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
-              >
-                @craftzdog
+                @lehoainam0106@gmail.com
               </Button>
             </Link>
           </ListItem>
@@ -192,18 +186,18 @@ const Home = () => (
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
+            href="https://store.steampowered.com/app/1245620/ELDEN_RING/"
+            title="Elden Ring"
+            thumbnail={thumbED}
           >
-            My YouTube channel
+            Currently playing
           </GridItem>
           <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
+            href="https://myanimelist.net/anime/48583/Shingeki_no_Kyojin__The_Final_Season_Part_2"
+            title="Attack On Titan"
+            thumbnail={thumbSNK}
           >
-            A Markdown note-taking app
+            Currently watching
           </GridItem>
         </SimpleGrid>
 
