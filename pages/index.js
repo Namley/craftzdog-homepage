@@ -63,7 +63,7 @@ const Home = () => (
             overflow='hidden'
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/Nam.png"
               alt="Profile image"
               borderRadius='full'
               width="100%"
@@ -88,7 +88,7 @@ const Home = () => (
         <Box align="center" my={4}>
           <NextLink href="/works" scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+              My Gear
             </Button>
           </NextLink>
         </Box>
@@ -200,14 +200,6 @@ const Home = () => (
             Currently watching
           </GridItem>
         </SimpleGrid>
-
-        <Box align="center" my={4}>
-          <NextLink href="/posts" scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
     </Container>
   </Layout>
